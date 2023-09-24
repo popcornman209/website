@@ -1,0 +1,241 @@
+body{
+    background-color:#1e1e2e;
+}
+p{
+    font-size:19px;
+    font-family:'Ubuntu Mono', monospace;
+    width:100%;
+    color:#cdd6f4;
+    line-height: 25px;
+    text-align:center;
+}
+h1, h3, td{
+    font-family:'Ubuntu Mono', monospace;
+    color:#cdd6f4;
+    text-align:center;
+}
+img{
+    width: 100%;
+}
+a{
+    font-family:'Ubuntu Mono', monospace;
+    color:#f5e0dc;
+    animation: fadeInLink 0.25s;
+}
+a:hover{
+    color:#ef9f76;
+    animation: fadeOutLink 0.25s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInTab {
+  0% { color: #cba6f7; }
+  100% { color: #b17cf4; }
+}
+@keyframes fadeOutTab {
+  0% { color: #b17cf4; }
+  100% { color: #cba6f7; }
+}
+
+@keyframes fadeInLink {
+  0% { color: #ef9f76; }
+  100% { color: #f5e0dc; }
+}
+@keyframes fadeOutLink {
+  0% { color: #f5e0dc; }
+  100% { color: #ef9f76; }
+}
+
+@keyframes fadeInFooter {
+  0% { color: #74c7ec; }
+  100% { color: #94e2d5; }
+}
+@keyframes fadeOutFooter {
+  0% { color: #94e2d5; }
+  100% { color: #74c7ec; }
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 25px 0;
+    background-color: #11111b;
+}
+.footerButtons{
+    margin: auto auto;
+    width:500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.footerButton{
+    font-size:15px;;
+    font-family:'Ubuntu Mono', monospace;
+    color:#74c7ec;
+    text-align:center;
+    text-decoration: none;
+    margin: auto auto;
+    animation: fadeOutFooter 0.25s;
+}
+.footerButton:hover{
+    animation: fadeInFooter 0.25s;
+    color:#94e2d5;
+}
+.mainContent{
+    max-width:570px;
+    margin: auto auto;
+    animation: fadeIn 1s;
+}
+.projectContent{
+    max-width:1000px;
+    margin: auto auto;
+    animation: fadeIn 1s;
+}
+.tabButton{
+    font-size:25px;
+    animation: fadeOutTab 0.25s;
+    font-family:'Ubuntu Mono', monospace;
+    color:#cba6f7;
+    text-align:center;
+    text-decoration: none;
+    margin: auto auto;
+}
+.tabButton:hover{
+    animation: fadeInTab 0.25s;
+    color:#b17cf4;
+}
+.tabButtonClicked{
+    font-size:25px;;
+    font-family:'Ubuntu Mono', monospace;
+    color:#b4befe;
+    text-align:center;
+    text-decoration: underline;
+    margin: auto auto;
+    animation: None;
+}
+.tabButtonClicked:hover{
+    animation: None;
+    color:#b4befe;
+}
+.buttons{
+    max-width:500px;
+    height:75px;
+    margin: auto auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/*.logo{
+    max-width:500px;
+    height:68px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("images/logo.png");
+    background-size: 100%;
+}
+*/
+@keyframes fadeInLogo {
+    0% { color: #f5c2e7; }
+    100% { color: #ea76cb; }
+}
+@keyframes fadeOutLogo {
+    0% { color: #ea76cb; }
+    100% { color: #f5c2e7; }
+}
+.logo{
+    font-family: 'Ubuntu Mono', monospace;
+    color: #f5c2e7;
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    text-decoration: none!important;
+    animation: fadeOutLogo 0.25s;
+}
+.logo:hover{
+    color: #ea76cb;
+    animation: fadeInLogo 0.25s;
+}
+.projectList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    padding-bottom: 100px;
+    gap: 30px;
+}
+
+@keyframes fadeInProj {
+  0% { filter: brightness(100%); }
+  100% { filter: brightness(80%); }
+}
+@keyframes fadeOutProj {
+  0% { filter: brightness(80%); }
+  100% { filter: brightness(100%); }
+}
+
+.projects{
+    text-decoration: none;
+    background-color: #181825;
+    border: 4px solid;
+    border-radius: 10px;
+    width: 250px;
+    height: 120px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: fadeOutProj 0.25s;
+    filter: brightness(100%);
+}
+.projects:hover{
+    animation: fadeInProj 0.25s;
+    filter: brightness(80%);
+}
+.projects h1{
+    font-size: 30px;
+    margin: 0;
+    padding: 0 0 10px;
+}
+.projects span{
+    text-align:center;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 19px;
+    color:#cdd6f4;
+}
+#project1{
+    color: #89b4fa;
+    border-color: #89b4fa;
+}
+#project2{
+    color: #f38ba8;
+    border-color: #f38ba8;
+}
+#project3{
+    color: #fab387;
+    border-color: #fab387;
+}
+#project4{
+    color: #cba6f7;
+    border-color: #cba6f7;
+}
+#project5{
+    color: #a6e3a1;
+    border-color: #a6e3a1;
+}
